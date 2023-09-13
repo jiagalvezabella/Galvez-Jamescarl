@@ -1,0 +1,63 @@
+import java.util.Scanner;
+
+public class PEMDASCalculator 
+{
+    public static void main(String[] args) 
+    {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter an arithmetic expression (2 + 3 * 4 / 2 ^ 2):");
+        String input = scanner.nextLine();
+
+        double result = evaluateExpression(input);
+        System.out.println("Result: " + result);
+
+        scanner.close();
+    }
+
+        public static double evaluateExpression(String expression) 
+        {
+            String[] tokens = expression.split(" ");
+            double currentResult = Double.parseDouble(tokens[0]);
+
+            for (int i = 1; i < tokens.length; i += 2) 
+            {
+                String operator = tokens[i];
+                double operand = Double.parseDouble(tokens[i + 1]);
+
+                switch (operator) 
+                {
+                    case "+":
+                        currentResult += operand;
+                        break;
+                    case "-":
+                        currentResult -= operand;
+                        break;
+                    case "*":
+                        currentResult *= operand;
+                        break;
+                    case "/":
+                    
+                    if (operand != 0) 
+                    {
+                        currentResult /= operand;
+                    } 
+                        else 
+                        {
+                            System.out.println("Error: Division by zero");
+                            System.exit(1);
+                        }
+                            break;
+                        case "^":
+                            currentResult = Math.pow(currentResult, operand);
+                            break;
+                            default:
+                        
+                            System.out.println("Error: Invalid operator");
+                            System.exit(1);
+                }
+            }
+
+            return currentResult;
+        }
+}

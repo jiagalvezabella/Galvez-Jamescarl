@@ -1,0 +1,26 @@
+package OOPSubject;
+
+public class FavoriteSong {
+    public static void main(String[] args) {
+        System.out.println("\nIkaw lang, mahal; laman ng tula\n" + 
+                            "Tunog ng gitara't himig ng kanta\n" + 
+                            "Kumupas man ang tinig ay hindi mawawala\n" + 
+                            "Hiwaga mong dala\n" + "Ikaw aking musika");
+
+        System.out.println("\nKung dumating ang araw na 'di na maalala\n" + 
+                            "Ng iyong mata ang aking mukha\n" +
+                            "Mahal, 'wag kang mag-alala, tanda naman ng puso\n" + 
+                            "Ang itsura ng naging pagsinta\n");
+                             
+        System.out.println("\nKung oras ay nababalik lang sana\n" + 
+                            "Ay babalik no'ng una kang nakita\n" + 
+                            "Muli kang liligawan nang muli kong maranasan\n" + 
+                            "Ang umibig sa anghel sa lupa\n");
+                            
+        System.out.println("\nIkaw lang, mahal; laman ng tula\n" + 
+                            "Tunog ng gitara't himig ng kanta\n" + 
+                            "Kumupas man ang tinig ay hindi mawawala\n" + 
+                            "Hiwaga mong dala\n" + 
+                            "Ikaw aking musika\n");
+    }
+}
